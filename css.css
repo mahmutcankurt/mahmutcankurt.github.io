@@ -1,0 +1,306 @@
+
+/*
+=====
+DEPENDENCES
+=====
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Amaranth:700,400&display=swap');
+
+/* The component will reset browser's styles of link */
+
+.r-link{
+	--uirLinkDisplay: var(--rLinkDisplay, inline-block);
+	--uirLinkTextColor: var(--rLinkTextColor);
+	--uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+
+	display: var(--uirLinkDisplay) !important;
+	color: var(--uirLinkTextColor) !important;
+	text-decoration: var(--uirLinkTextDecoration) !important;
+}
+
+/* The component will reset browser's styles of titles */
+
+.r-title{
+	--uirTitleMarginTop: var(--rTitleMarginTop, 0);
+	--uirTitleMarginBottom: var(--rTitleMarginBottom, 0);
+
+	margin-top: var(--uirTitleMarginTop) !important;
+	margin-bottom: var(--uirTitleMarginBottom) !important;
+}
+
+/*
+=====
+CORE STYLES
+=====
+*/
+
+.animated-underline{
+	--uiAnimatedUnderlineWidth: var(--animatedUnderlineWidth, 100%);
+	--uiAnimatedUnderlineHeight: var(--animatedUnderlineHeight, 2px);
+	--uiAnimatedUnderlineBgColor: var(--animatedUnderlineBgColor, currentColor);
+	--uiAnimatedUnderlinePositionX: var(--animatedUnderlinePositionX, left);
+	--uiAnimatedUnderlinePositionY: var(--animatedUnderlinePositionY, bottom);
+
+	/*
+		1. For multi-line animated underline the "inline" value for the display property is compulsory.
+		2. Adds opportunity to create multi-line padding
+	*/
+
+	--rLinkDisplay: inline; /* 1 */
+
+	background-image: linear-gradient(0, var(--uiAnimatedUnderlineBgColor) 0, var(--uiAnimatedUnderlineBgColor));
+	background-size: var(--uiAnimatedUnderlineWidth) var(--uiAnimatedUnderlineHeight);
+	background-position: var(--uiAnimatedUnderlinePositionX) var(--uiAnimatedUnderlinePositionY);
+	background-repeat: no-repeat;
+	
+	-webkit-box-decoration-break: clone; /* 2 */
+	box-decoration-break: clone; /* 2 */
+	
+	will-change: background-size;
+	transition: background-size .25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*
+=====
+SETTINGS
+=====
+*/
+
+:root{
+	--animatedUnderlineHeight: 1rem;
+	--animatedUnderlineBgColor: var(--accentColor);
+}	
+
+.animated-underline_type1{
+	--animatedUnderlineWidth: 100%;
+}
+
+.animated-underline_type1:hover{
+	--animatedUnderlineHeight: 100%;
+}
+
+.animated-underline_type2{
+	--animatedUnderlineWidth: 100%;
+}
+
+.animated-underline_type2:hover{
+	--animatedUnderlineWidth: 0;
+}
+
+.animated-underline_type3{
+	--animatedUnderlineHeight: 0;
+}
+
+.animated-underline_type3:hover{
+	--animatedUnderlineHeight: 100%;
+}
+
+.animated-underline_type4{
+	--animatedUnderlineWidth: 0;
+}
+
+.animated-underline_type4:hover{
+	--animatedUnderlineWidth: 100%;
+}
+
+.animated-underline_type5{
+	--animatedUnderlineWidth: 100%;
+	--animatedUnderlineHeight: 5px;
+	--animatedUnderlinePositionY: 90%;
+}
+
+.animated-underline_type5:hover{
+	--animatedUnderlineHeight: 1rem;
+}
+
+/*
+=====
+DEMO
+=====
+*/
+
+:root{
+	--mainColor: #CB4335;
+	--accentColor: #CB4335;
+	--accentColorDark: #CB4335;
+	--blackColor: #222;
+	--whiteColor: #fff;
+	--rLinkTextColor: var(--blackColor);
+}	
+
+body{
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+	color: var(--blackColor);
+	background-color: #f0f0f0;
+}
+
+.page{
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page__name-effect{
+	display: inline-flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: .875rem;
+}
+
+.page__name-effect::before{
+	content: "";
+	width: 3.75rem;
+	height: 2px;
+	background-color: var(--mainColor);
+	margin-top: .25rem;
+	margin-right: .625rem;
+}
+
+.page__section:nth-child(n+2){
+	margin-top: 5rem;
+}
+
+.page__group{
+	margin-top: 2rem;
+}
+
+.news{
+	position: relative;
+
+	padding: 70px 6%;
+	border-top: 6px solid var(--mainColor);
+	border-radius: 4px;
+
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+	background-color: var(--whiteColor);
+}
+
+.news:nth-child(n+2){
+	margin-top: 3rem;
+}
+
+.news__date{
+	font-size: 0.9375rem;
+	font-weight: 700;
+}
+
+.news__title{
+	font-family: 'Amaranth', sans-serif;
+	line-height: 1.25;
+}
+
+.news__link::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.news__content{
+	margin-top: 1.875rem;
+}
+
+p{
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1.78;
+}
+
+@media (max-width: 640px){
+
+	html{
+		font-size: 93.75%;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 768px){
+
+	html{
+		font-size: 100%;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 960px){
+
+	html{
+		font-size: 106.25%;
+	}
+}
+
+@media (min-width: 961px){
+
+	html{
+		font-size: 112.5%;
+	}
+}
+
+@media (max-width: 960px){
+
+	.page{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.page__name-effect{
+		padding-left: .625rem;
+		padding-right: .625rem;
+	}
+
+	.news__title{
+		--rTitleMarginTop: .75rem;
+		font-size: 1.75rem;
+	}
+}
+
+@media (min-width: 961px){
+
+	.page{
+		padding: 80px 50px;
+	}
+
+	.news__header{
+		display: flex;
+		align-items: flex-start;
+
+		padding-left: 1.5rem;
+		padding-right: 2.5rem;
+	}
+
+	.news__date{
+		flex-shrink: 0;
+		font-family: 'Amaranth', sans-serif;
+
+		margin-right: 40px;
+		text-align: center;
+	}
+
+	.news__day{
+		line-height: 1;
+		display: block;
+		font-size: 4.333rem;
+		color: var(--accentColorDark);
+	}
+
+	.news__year{
+		display: block;
+		font-size: 1rem;
+		margin-top: 5px;
+	}
+
+	.news__title{
+		font-size: 2.5rem;
+	}	
+}
+
+@media (min-width: 1301px){
+
+	.page__group{
+		padding-left: 190px;
+		padding-right: 100px;
+	}
+}
