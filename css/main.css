@@ -56,6 +56,66 @@
 .timeline-card-success:after {
   background-color: #cd853f; }
 
+/*-------------------------------------------------------*/
+.timeline-references {
+  border-left: 2px solid #E6E9ED;
+  padding: 1rem 0; }
+
+.timeline-references-card {
+  position: relative;
+  margin-left: 31px;
+  border-left: 2px solid;
+  margin-bottom: 2rem;
+  background-color: #f2f2f2; }
+
+.timeline-references-card:last-child {
+  margin-bottom: 1rem; }
+
+.timeline-references-card:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 12px;
+  height: 12px;
+  top: 20px;
+  left: -41px;
+  border: 2px solid;
+  z-index: 2; }
+
+.timeline-references-card:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: currentColor;
+  width: 29px;
+  height: 2px;
+  top: 25px;
+  left: -29px;
+  z-index: 1; }
+
+.timeline-references-card-primary {
+  border-left-color: #3b3a26; }
+
+.timeline-references-card-primary:before {
+  border-color: #3b3a26; }
+
+.timeline-references-card-primary:after {
+  background-color: #3b3a26; }
+
+.timeline-references-card-success {
+  border-left-color: #cd853f; }
+
+.timeline-references-card-success:before {
+  border-color: #cd853f; }
+
+.timeline-references-card-success:after {
+  background-color: #cd853f; }
+
+
+/*-------------------------------------------------------*/
+
 html {
   scroll-behavior: smooth; }
 
