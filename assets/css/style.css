@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Red Hat Mono', monospace;
+    background-color: black;
+}
+
+.nav-link a {
+    color: rgb(29, 172, 0)
+}
+
+.menu-alt-cizgi{
+    text-decoration: underline;
+    filter: none;
+}
+
+.menu-alt-cizgi:hover{
+    text-decoration: none;
+    filter: grayscale(100%);
+    transition-duration: 500ms;
+}
+
+.maho-resim {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+.maho-resim:hover {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition-duration: 1000ms;
+}
