@@ -11,228 +11,198 @@
   <meta property="og:image" itemid="image" content="https://mahmutcankurt.github.io/assets/mahonnyl.jpg" />
   <meta property="og:description" content="Personal Website" />
   <title>Mahmut Can Kurt</title>
-
   <link rel="shortcut icon" href="./assets/images/logo1.ico" type="image/x-icon">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="flex flex-col min-h-[100dvh]">
-    <header class="bg-primary text-primary-foreground py-8 px-4 md:px-6">
-      <div class="container max-w-4xl mx-auto flex flex-col items-center text-center">
-        <h1 class="text-4xl font-bold mb-2">Mahmut Can Kurt</h1>
-        <p class="text-xl font-medium mb-6">Software Engineer</p>
-        <p class="max-w-[600px] text-muted-foreground">
-          I'm a dedicated software engineer with a strong background in database and cloud
-          engineering. With a passion for crafting efficient backend solutions, I've had the privilege of contributing
-          to diverse projects that have shaped my expertise.
-        </p>
-        <p class="max-w-[600px] text-muted-foreground">
-          At just 25 years old, my journey has been one of continuous learning and growth in the dynamic world of
-          technology. This website serves as a showcase of my skills, experiences, and accomplishments. From
-          optimizing databases to architecting cloud solutions, I've left my mark in various domains.
-        </p>
-        <p class="max-w-[600px] text-muted-foreground">
+  <div class="d-flex flex-column min-vh-100">
+    <header class="text-black py-8 px-4" style="background-color: #fff;">
+      <div class="container text-center">
+        <h1 class="display-4 font-weight-bold mb-2 mt-4">Mahmut Can Kurt</h1>
+        <p class="h4 font-weight-normal mb-4">Backend Developer</p>
+        <p class="lead">
+          I'm a dedicated software engineer with a strong background in database and cloud engineering. With a passion
+          for crafting efficient backend solutions, I've had the privilege of contributing to diverse projects that have
+          shaped my expertise.
+          At just 26 years old, my journey has been one of continuous learning and growth in the dynamic world of
+          technology. This website serves as a showcase of my skills, experiences, and accomplishments. From optimizing
+          databases to architecting cloud solutions, I've left my mark in various domains.
           Feel free to explore my achievements and the projects I've been a part of. If you're seeking a committed
           software professional who thrives in challenging environments, you're in the right place. Thank you for
           visiting, and I'm excited to connect with you.
         </p>
-        </p>
       </div>
     </header>
-    <main class="flex-1">
-      <section class="py-12 md:py-16 lg:py-20">
-        <div class="container max-w-4xl mx-auto px-4 md:px-6">
-          <h2 class="text-3xl font-bold mb-8">Work Experience</h2>
-          <div class="space-y-8">
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Backend Developer</h3>
-              <p class="text-muted-foreground mb-1">Global IT | 2022 - Present</p>
-              <ul class="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>
-                  I am a dedicated professional currently contributing my expertise to a leading Global IT, specifically
-                  on the groundbreaking Weoll project. As a key member of the team, I specialize in NodeJS and leverage
-                  cutting-edge technologies such as Google Cloud, Cloud SQL, Redis, Firestore, Firebase, PostgreSQL, and
-                  Cloud Tasks.
-                </li>
-                <li>
-                  My role extends to spearheading the backend development of the project, where I actively engage in
-                  pivotal aspects that shape its trajectory. I thrive in critical moments, playing a significant role in
-                  steering the project through decisive turning points.
-                </li>
-                <li>
-                  One of my primary responsibilities involves enhancing the efficiency of the PostgreSQL database,
-                  implementing strategic optimizations, and assuming the architecture and management of the database. I
-                  take pride in my ability to refine and streamline the database's operations, ensuring it functions
-                  seamlessly to support the overall success of the Weoll project.
-                </li>
+    <main class="flex-fill" style="background-color: #fff;">
+      <hr>
+      <section class="py-5">
+        <div class="container">
+          <h2 class="h2 font-weight-bold mb-4">Work Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3 class="h4 font-weight-bold">Backend Developer</h3>
+              <p class="text-muted">Global IT | 2022 - Present</p>
+              <ul class="list-unstyled">
+                <li class="mb-2">I am a dedicated professional currently contributing my expertise to a leading Global IT, specifically on the groundbreaking Weoll project. As a key member of the team, I specialize in NodeJS and leverage cutting-edge technologies such as Google Cloud, Cloud SQL, Redis, Firestore, Firebase, PostgreSQL, and Cloud Tasks.</li>
+                <li class="mb-2">My role extends to spearheading the backend development of the project, where I actively engage in pivotal aspects that shape its trajectory. I thrive in critical moments, playing a significant role in steering the project through decisive turning points.</li>
+                <li class="mb-2">One of my primary responsibilities involves enhancing the efficiency of the PostgreSQL database, implementing strategic optimizations, and assuming the architecture and management of the database. I take pride in my ability to refine and streamline the database's operations, ensuring it functions seamlessly to support the overall success of the Weoll project.</li>
               </ul>
             </div>
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Backend Developer</h3>
-              <p class="text-muted-foreground mb-1">Arma Group Holding | 2021 - 2022</p>
-              <ul class="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>Developed web scraping bots with Python and designed a backend API using Django Rest API to set up a
-                  website and our MySQL server. Served as a Database Administrator in the Cloud Team for the Bul Search
-                  Engine and Bul Drive Storage project, creating a Cloud Cluster System with Hadoop.
-                </li>
+            <hr>
+            <div class="timeline-item">
+              <h3 class="h4 font-weight-bold">Backend Developer</h3>
+              <p class="text-muted">Arma Group Holding | 2021 - 2022</p>
+              <ul class="list-unstyled">
+                <li>Developed web scraping bots with Python and designed a backend API using Django Rest API to set up a website and our MySQL server. Served as a Database Administrator in the Cloud Team for the Bul Search Engine and Bul Drive Storage project, creating a Cloud Cluster System with Hadoop.</li>
               </ul>
             </div>
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Software Engineering Intern</h3>
-              <p class="text-muted-foreground mb-1">Kobisi | 2020 - 2020</p>
-              <ul class="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>I was part of a company that develops Kobisi e-commerce websites, where I was responsible for the
-                  backend development of mobile application projects.</li>
+            <hr>
+            <div class="timeline-item">
+              <h3 class="h4 font-weight-bold">Software Engineering Intern</h3>
+              <p class="text-muted">Kobisi | 2020 - 2020</p>
+              <ul class="list-unstyled">
+                <li>I was part of a company that develops Kobisi e-commerce websites, where I was responsible for the backend development of mobile application projects.</li>
               </ul>
             </div>
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Software Engineering Intern</h3>
-              <p class="text-muted-foreground mb-1">Carpedu | 2019 - 2019</p>
-              <ul class="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>Developed a website by integrating puzzles and visuals for use in psychology studies and graded the
-                  data obtained from these tests using Python and Django Web Framework.</li>
+            <div class="timeline-item">
+              <h3 class="h4 font-weight-bold">Software Engineering Intern</h3>
+              <p class="text-muted">Carpedu | 2019 - 2019</p>
+              <ul class="list-unstyled">
+                <li>Developed a website by integrating puzzles and visuals for use in psychology studies and graded the data obtained from these tests using Python and Django Web Framework.</li>
               </ul>
             </div>
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Software Engineering Intern</h3>
-              <p class="text-muted-foreground mb-1">Tosia Tech | 2018 - 2019</p>
-              <ul class="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>Developed a blog site where travelers could share their experiences using Python and Django Web
-                  Framework.</li>
-                <li>
-                  Worked on Blockchain Technologies and developed a new virtualized payment system.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Software Engineering Intern</h3>
-              <p class="text-muted-foreground mb-1">Kobisi | 2020 - 2020</p>
-              <ul class="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>I was part of a company that develops Kobisi e-commerce websites, where I was responsible for the
-                  backend development of mobile application projects.</li>
+            <hr>
+            <div class="timeline-item">
+              <h3 class="h4 font-weight-bold">Software Engineering Intern</h3>
+              <p class="text-muted">Tosia Tech | 2018 - 2019</p>
+              <ul class="list-unstyled">
+                <li>Developed a blog site where travelers could share their experiences using Python and Django Web Framework.</li>
+                <li>Worked on Blockchain Technologies and developed a new virtualized payment system.</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-      <section class="bg-muted py-12 md:py-16 lg:py-20">
-        <div class="container max-w-4xl mx-auto px-4 md:px-6">
-          <h2 class="text-3xl font-bold mb-8">Education</h2>
-          <div class="space-y-8">
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Bachelor of Science in Computer Science</h3>
-              <p class="text-muted-foreground mb-1">Duzce University, 2016 - 2021</p>
-              <p class="text-muted-foreground">
-                <p>Head of the Press and Broadcasting Unit in the Idealist Students Community.</p>
-                <p>Head of the Environment, Science and Technology Unit in Duzce University Turkish Cultural Society.</p>
-                <p>Studied English Preparatory class for one year and graduated with 2.92 GPA.</p>
+      <hr>
+      <section class="py-5" style="background-color: #fff;">
+        <div class="container">
+          <h2 class="h2 font-weight-bold mb-4">Education</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3 class="h4 font-weight-bold">Bachelor of Science in Computer Science</h3>
+              <p class="text-muted">Duzce University, 2016 - 2021</p>
+              <p class="text-muted">
+                Head of the Press and Broadcasting Unit in the Idealist Students Community.<br>
+                Head of the Environment, Science and Technology Unit in Duzce University Turkish Cultural Society.<br>
+                Studied English Preparatory class for one year and graduated with 2.92 GPA.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="py-12 md:py-16 lg:py-20">
-        <div class="container max-w-4xl mx-auto px-4 md:px-6">
-          <h2 class="text-3xl font-bold mb-8">Key Skills</h2>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div class="bg-muted/20 rounded-lg p-4">
-              <h3 class="text-lg font-semibold mb-2">Languages</h3>
-              <ul class="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>JavaScript</li>
-                <li>Python</li>
-              </ul>
+      <hr>
+      <section class="py-5" style="background-color: #fff;">
+        <div class="container">
+          <h2 class="h2 font-weight-bold mb-4">Key Skills</h2>
+          <div class="row">
+            <div class="col-md-4 d-flex">
+              <div class="card bg-dark mb-3 w-100">
+                <div class="card-body text-white">
+                  <h3 class="h5 card-title font-weight-bold">Languages</h3>
+                  <ul class="list-unstyled">
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="bg-muted/20 rounded-lg p-4">
-              <h3 class="text-lg font-semibold mb-2">Technologies</h3>
-              <ul class="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>NodeJS</li>
-                <li>ExpressJS</li>
-                <li>Google Cloud</li>
-                <li>Hadoop</li>
-                <li>PostgreSQL</li>
-                <li>MySQL</li>
-                <li>Tensorflow</li>
-              </ul>
+            <div class="col-md-4 d-flex">
+              <div class="card bg-dark mb-3 w-100">
+                <div class="card-body text-white">
+                  <h3 class="h5 card-title font-weight-bold">Technologies</h3>
+                  <ul class="list-unstyled">
+                    <li>NodeJS</li>
+                    <li>ExpressJS</li>
+                    <li>Google Cloud</li>
+                    <li>Hadoop</li>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>Tensorflow</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="bg-muted/20 rounded-lg p-4">
-              <h3 class="text-lg font-semibold mb-2">Knowledge</h3>
-              <ul class="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>Cloud Architecture</li>
-                <li>Cloud Computing</li>
-                <li>Database Administration</li>
-                <li>SQL</li>
-                <li>NoSQL</li>
-                <li>Git</li>
-              </ul>
+            <div class="col-md-4 d-flex">
+              <div class="card bg-dark mb-3 w-100">
+                <div class="card-body text-white">
+                  <h3 class="h5 card-title font-weight-bold">Knowledge</h3>
+                  <ul class="list-unstyled">
+                    <li>Cloud Architecture</li>
+                    <li>Cloud Computing</li>
+                    <li>Database Administration</li>
+                    <li>SQL</li>
+                    <li>NoSQL</li>
+                    <li>Git</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="bg-muted py-12 md:py-16 lg:py-20">
-        <div class="container max-w-4xl mx-auto px-4 md:px-6">
-          <h2 class="text-3xl font-bold mb-8">Contact</h2>
-          <form class="space-y-4">
-            <div>
-              <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="name">
-                Name
-              </label>
-              <input
-                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                id="name" placeholder="Enter your name" required="" type="text" />
+      <hr>
+      <section class="py-5">
+        <div class="container">
+          <h2 class="h2 font-weight-bold mb-4">Contact</h2>
+            <div class="form-group">
+              <label for="email">Email: </label>
+              <a href="mailto: is.mahmutcankurt@gmail.com" class="mr-2">is.mahmutcankurt@gmail.com</a>
             </div>
-            <div>
-              <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="email">
-                Email
-              </label>
-              <input
-                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                id="email" placeholder="Enter your email" required="" type="email" />
-            </div>
-            <div>
-              <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="message">
-                Message
-              </label>
-              <textarea
-                class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                id="message" placeholder="Enter your message" required=""></textarea>
-            </div>
-            <button
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
-              type="submit">
-              Submit
-            </button>
-          </form>
         </div>
       </section>
     </main>
-    <footer class="bg-primary text-primary-foreground py-6 px-4 md:px-6">
-      <div class="container max-w-4xl mx-auto flex justify-between items-center">
-        <p class="text-sm">© 2024 Mahmut Can Kurt. All rights reserved.</p>
-        <div class="flex gap-4">
-          <a class="hover:underline" href="https://www.linkedin.com/in/mahmutcankurt/">
-            LinkedIn
-          </a>
-          <a class="hover:underline" href="https://github.com/mahmutcankurt">
-            GitHub
-          </a>
-          <a class="hover:underline" href="https://x.com/grandmasterdevr/">
-            X
-          </a>
-          <a class="hover:underline" href="https://instagram.com/mahmutcankurt/">
-            Instagram
-          </a>
-          <a class="hover:underline" href="https://www.facebook.com/mahmutcan.kurt.54966/">
-            Facebook
-          </a>
+    <footer class="text-dark py-4" style="background-color: #fff">
+      <div class="container d-flex justify-content-between align-items-center">
+        <p class="mb-0">&copy; 2024 Mahmut Can Kurt. All rights reserved.</p>
+        <div>
+          <a href="https://www.linkedin.com/in/mahmutcankurt/" class="text-dark mr-2">LinkedIn</a>
+          <a href="https://github.com/mahmutcankurt" class="text-dark mr-2">GitHub</a>
+          <a href="https://x.com/grandmasterdevr/" class="text-dark mr-2">Twitter</a>
+          <a href="https://instagram.com/mahmutcankurt/" class="text-dark mr-2">Instagram</a>
+          <a href="https://www.facebook.com/mahmutcan.kurt.54966/" class="text-dark">Facebook</a>
         </div>
       </div>
     </footer>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
 </body>
+
+</html>
