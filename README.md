@@ -1,5 +1,5 @@
-# mahmutcankurt.github.io
+# mahmutcankurt.com
 
-## MY PERSONAL WEBSITE
+Personal website of Mahmut Can Kurt, hosted on GitHub Pages.
 
-https://mahmutcankurt.github.io
+https://mahmutcankurt.com

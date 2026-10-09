@@ -1,411 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
-
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Mahmut Can Kurt" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://mahmutcankurt.github.io/" />
-  <meta property="og:image" itemid="image" content="https://mahmutcankurt.github.io/img/mahonnyl.jpg" />
-  <meta property="og:description" content="Personal Website" />
+  <title>Mahmut Can Kurt | Backend Developer</title>
+  <meta name="description" content="Mahmut Can Kurt is a Backend Developer in Istanbul who builds multi-tenant SaaS systems with Node.js, TypeScript, PostgreSQL, Redis and Google Cloud. Works on the Weoll iBPM platform.">
+  <meta name="author" content="Mahmut Can Kurt">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://mahmutcankurt.com/">
 
-  <title>Mahmut Can Kurt</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mahmut Can Kurt | Backend Developer">
+  <meta property="og:description" content="Backend Developer who turns tangled business processes into dependable software. Node.js, TypeScript, PostgreSQL, Redis and Google Cloud.">
+  <meta property="og:url" content="https://mahmutcankurt.com/">
+  <meta property="og:image" content="https://mahmutcankurt.com/img/profile.png">
+  <meta name="twitter:card" content="summary">
 
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
-    rel="stylesheet">
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-  <link href="css/resume.min.css" rel="stylesheet">
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-  <link rel="manifest" href="/img/site.webmanifest">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="img/site.webmanifest">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mahmut Can Kurt",
+    "jobTitle": "Backend Developer",
+    "url": "https://mahmutcankurt.com/",
+    "image": "https://mahmutcankurt.com/img/profile.png",
+    "email": "mailto:is.mahmutcankurt@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Istanbul", "addressCountry": "TR" },
+    "worksFor": { "@type": "Organization", "name": "Global IT" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Duzce University" },
+    "knowsAbout": ["Node.js", "TypeScript", "PostgreSQL", "Redis", "Google Cloud", "REST API", "Workflow Automation", "Django"],
+    "sameAs": ["https://www.linkedin.com/in/mahmutcankurt/", "https://github.com/mahmutcankurt", "https://x.com/grandmasterdevr"]
+  }
+  </script>
 </head>
 
-<body id="page-top">
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Mahmut Can Kurt</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">EXPERIENCE</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">EDUCATION</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">SKILLS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#resume">RESUME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#certifications">CERTIFICATIONS &amp; COURSES</a>
-        </li>
-      </ul>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Mahmut Can Kurt, home">
+        <span class="g">mahmutcankurt</span><span class="at-host"><span class="at">@</span><span class="b">istanbul</span></span><span class="at">:~$</span><span class="caret" aria-hidden="true"></span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">about</a></li>
+          <li><a href="#experience">experience</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#education">education</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
     </div>
-  </nav>
+  </header>
 
-  <div class="container-fluid p-0">
+  <main id="main">
 
-    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-      <div class="my-auto">
-        <h1 class="mb-0">Mahmut Can
-          <span class="text-primary">Kurt</span>
-        </h1>
-        <div class="subheading mb-5">Istanbul, Turkiye ·
-          <a href="mailto:is.mahmutcankurt@gmail.com">is.mahmutcankurt@gmail.com</a>
-        </div>
-        <p class="mb-5">Highly skilled Backend Developer with extensive expertise in NodeJS, Javascript and SQL,
-          specializing in building robust and
-          scalable systems. Proven track record in optimizing PostgreSQL databases, designing APIs, and leveraging
-          advanced
-          technologies like Google Cloud and Redis. Experienced in leading backend development for e-commerce platforms,
-          mobile
-          applications, and innovative projects like Weoll. Eager to contribute to cutting-edge software solutions that
-          drive efficiency
-          and innovation.</p>
-        <ul class="list-inline list-social-icons mb-0">
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com/mahmutcan.kurt.54966" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="hello"><span class="g">$</span> echo "hello, world"</p>
+          <div class="id">
+            <img src="img/profile.png" alt="Portrait of Mahmut Can Kurt" width="72" height="72">
+            <div>
+              <h1>Mahmut Can Kurt</h1>
+            </div>
+          </div>
+          <p class="tagline"><b>Backend Developer</b> / Istanbul, Türkiye</p>
+          <p class="lead">I turn tangled business processes into dependable software: workflow engines, multi-tenant PostgreSQL and event-driven Google Cloud pipelines that keep running while everyone else is asleep.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="MahmutCanKurt-ProfessionalResume.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+              resume.pdf
             </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://x.com/grandmasterdevr" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
+            <a class="btn btn-ghost" href="mailto:is.mahmutcankurt@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              say hello
             </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/mahmutcankurt/" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
+          </div>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/mahmutcankurt/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3V9.75zm6.5 0h3.83v1.54h.05c.53-1 1.84-2.07 3.78-2.07 4.04 0 4.79 2.66 4.79 6.12V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4V9.75z"/></svg>
             </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://github.com/mahmutcankurt" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-              </span>
+            <a href="https://github.com/mahmutcankurt" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
             </a>
-          </li>
-        </ul>
+            <a href="https://x.com/grandmasterdevr" target="_blank" rel="noopener" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="window reveal" aria-label="Profile summary">
+          <div class="window-bar"><span class="dot r1"></span><span class="dot y1"></span><span class="dot g1"></span><span class="window-title">profile.json</span></div>
+<pre class="code"><span class="c">// numbers from the Weoll backend</span>
+{
+  <span class="s">"name"</span>: <span class="f">"Mahmut Can Kurt"</span>,
+  <span class="s">"role"</span>: <span class="f">"Backend Developer"</span>,
+  <span class="s">"yearsInBackend"</span>: <span class="n">5</span>,
+  <span class="s">"commits"</span>: <span class="f">"2,700+"</span>,
+  <span class="s">"mergedPullRequests"</span>: <span class="f">"450+"</span>,
+  <span class="s">"serviceModules"</span>: <span class="f">"80+"</span>,
+  <span class="s">"stack"</span>: [<span class="f">"Node.js"</span>, <span class="f">"TypeScript"</span>,
+            <span class="f">"PostgreSQL"</span>, <span class="f">"Redis"</span>, <span class="f">"GCP"</span>],
+  <span class="s">"openToCoffee"</span>: <span class="n">true</span>
+}</pre>
+        </div>
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-      <div class="my-auto">
-        <h2 class="mb-5">Experience</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Backend Developer</h3>
-            <div class="subheading mb-3">Global IT</div>
-            <p>• Lead backend development for the Weoll project, utilizing NodeJS and advanced technologies. <br>
-              • Architect and optimize PostgreSQL databases, focusing on performance tuning and efficiency. <br>
-              • Drive technical decision-making and development processes for critical project phases.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">December 2022 - Present</span>
-          </div>
+    <section id="about">
+      <div class="container">
+        <div class="sec-head reveal"><h2>about</h2><span class="cmt">// README.md</span></div>
+        <div class="panel about reveal">
+          <p>For nearly four years I have helped build and run <strong>Weoll</strong>, an intelligent business process management (iBPM) SaaS platform that manages the processes of <strong>30,000+ employees</strong>. Companies hand it their approvals, tasks and documents, and it has to simply work.</p>
+          <p>I work across the whole backend: <strong>workflow engines</strong>, <strong>multi-tenant PostgreSQL</strong>, <strong>event-driven Google Cloud pipelines</strong>, security hardening and data protection. I care about code that is easy to read, safe to change and secure by default.</p>
+          <p>2,700+ commits, 450+ merged pull requests and 80+ service modules in, I still enjoy the hard parts.</p>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Backend Developer</h3>
-            <div class="subheading mb-3">Arma Group Holding</div>
-            <p>• Developed sophisticated web scraping bots using Python, automating data extraction for various web
-              sources. <br>
-              • Designed and implemented a robust backend API utilizing Django Rest API, facilitating the seamless setup
-              of a website and integration with a MySQL server. <br>
-              • Served as the Database Administrator for the Bul Search Engine and Bul Drive Storage project, playing a
-              key role in the Cloud Team. <br>
-              • Engineered a Cloud Cluster System using Hadoop, optimizing data processing and storage capabilities for
-              the project.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">November 2021 - December 2022</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Software Engineering Intern</h3>
-            <div class="subheading mb-3">Kobisi</div>
-            <p>• Led backend development for mobile applications in Kobisi e-commerce projects using NodeJS. <br>
-              • Ensured robust and scalable integration of e-commerce functionalities into mobile platforms.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2020 - August 2020</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Software Engineering Intern</h3>
-            <div class="subheading mb-3">Carpedu</div>
-            <p>• Created a website using Python and Django Web Framework for psychology studies, integrating puzzles and
-              visuals to support research.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2019 - December 2019</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Software Engineering Intern</h3>
-            <div class="subheading mb-3">Tosia Tech</div>
-            <p>• Created a travel blog site with Python and Django, enhancing community engagement and content sharing.
-              <br>
-              • Developed a secure virtualized payment system using blockchain technology.
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2018 - August 2019</span>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-      <div class="my-auto">
-        <h2 class="mb-5">Education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Duzce University</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Computer Science</div>
-            <p>GPA: 2.92</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2016 - August 2021</span>
-          </div>
-        </div>
-
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-      <div class="my-auto">
-        <h2 class="mb-5">Skills</h2>
+    <section id="experience">
+      <div class="container">
+        <div class="sec-head reveal"><h2>experience</h2><span class="cmt">// git log --oneline --graph</span></div>
 
-        <div class="subheading mb-3">Programming Languages</div>
-        <ul class="list-inline list-icons">
-          <li class="list-inline-item">
-            <i class="devicon-javascript-plain"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-typescript-plain"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-python-plain"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-azuresqldatabase-plain"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-html5-plain"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-css3-plain"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-bash-plain"></i>
-          </li>
-        </ul>
+        <ol class="log">
 
-        <div class="subheading mb-3">Frameworks</div>
-        <ul class="list-inline list-icons">
-          <li class="list-inline-item">
-            <i class="devicon-nodejs-plain"></i>
+          <li class="commit head reveal">
+            <div class="refs"><span class="tag head">HEAD -&gt; main</span><span class="tag branch">weoll</span></div>
+            <div class="commit-title">
+              <h3>Backend Developer <span class="at">@ Global IT (Weoll)</span></h3>
+              <span class="when">Dec 2022 - Present</span>
+            </div>
+            <div class="commit-body">
+              <p>Weoll combines no-code process design, contextual task management, relational data tables and AI-assisted document management in one platform. Trusted by:</p>
+              <ul class="customers" aria-label="Weoll customers">
+                <li>Hepsiburada</li>
+                <li>Aras Kargo</li>
+                <li>Toyzz Shop</li>
+                <li>Yemeksepeti</li>
+                <li>Koleksiyon Mobilya</li>
+                <li>ODE Yalıtım</li>
+                <li>Happy Moon's</li>
+                <li>Osmanlı Yatırım</li>
+                <li>Gözalan Holding</li>
+              </ul>
+              <ul class="diff">
+                <li><b>Built and maintained the engine room of a multi-tenant SaaS:</b> the Weoll backend (Node.js 22, TypeScript, JavaScript, Express.js) on PostgreSQL with an isolated database per customer (Knex.js), Firestore, Redis and Google Cloud, spanning 140K+ lines and 80+ service modules.</li>
+                <li><b>Made workflows run on schedule and on time:</b> extended the no-code flow engine, where every node is an idempotent Cloud Task, with scheduled triggers, wait and delay steps, end-of-flow rollups, lookup placeholders inside flow actions and automatic alerts to admins when an approval step has no owner.</li>
+                <li><b>Gave customers a richer data model:</b> built and refined lookup, rollup, formula and currency field types, filter options, bulk Excel import and export, and dependency-safe table deletion that topologically sorts multi-level foreign keys before dropping tables.</li>
+                <li><b>Opened the platform to outside collaborators:</b> designed external (guest) user management on Firebase Identity Platform, with suspend and activate, instant Pub/Sub sign-out, per-customer external mail limits and guards that keep external users from seeing other externals or gaining admin rights.</li>
+                <li><b>Protected sensitive data:</b> implemented a client-side encrypted field type, including encrypted phone and email fields, whose ciphertext stays out of search and filters and whose reset is limited to table admins and row owners.</li>
+                <li><b>Delivered reporting that scales:</b> report filters, search, scheduled email snapshots and timezone-correct dates, plus chunked Cloud Tasks pipelines that turn large tables and reports into Excel files without blocking requests.</li>
+                <li><b>Built a complete audit trail:</b> structured, paginated logs for table creation, schema and field changes, rollups, row edits, layout updates and flow-version activations, so administrators can always answer who changed what and when.</li>
+                <li><b>Hardened security:</b> shipped ClamAV antivirus scanning for Cloud Storage uploads as a standalone Cloud Run service with quarantine, owner notification and audit logging; fixed a potential SQL injection path; added HTML sanitization to the page designer; wrote a PostgreSQL error-translation layer that turns SQLSTATE codes into clean client errors; kept dependencies patched.</li>
+                <li><b>Kept the platform fast and tidy:</b> replaced a blocking Cloud SQL export with a task-driven polling pipeline, added a scheduled orphan-attachment cleaner, prepared the App Engine to Cloud Run move with OIDC-authenticated Cloud Tasks, delivered Android and APNs notification counts and integrated a Jira-backed support desk module.</li>
+                <li><b>Maintained ready-made Weoll Market apps</b> such as announcements and polls, with Turkish, English and Romanian content and Swagger/OpenAPI documentation for every endpoint.</li>
+              </ul>
+            </div>
           </li>
-          <li class="list-inline-item">
-            <i class="devicon-express-original"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-nestjs-original"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-django-plain"></i>
-          </li>
-        </ul>
 
-        <div class="subheading mb-3">Tools &amp; Technologies</div>
-        <ul class="list-inline list-icons">
-          <li class="list-inline-item">
-            <i class="devicon-googlecloud-plain"></i>
+          <li class="commit reveal">
+            <div class="refs"><span class="tag branch">arma</span></div>
+            <div class="commit-title">
+              <h3>Backend Developer <span class="at">@ Arma Group Holding</span></h3>
+              <span class="when">Nov 2021 - Dec 2022</span>
+            </div>
+            <div class="commit-body">
+              <ul class="diff">
+                <li><b>Automated data collection</b> by building Python web-scraping bots that extracted data from a variety of web sources.</li>
+                <li><b>Designed a Django REST Framework backend</b> with a MySQL database that powered the company website, from API design to server integration.</li>
+                <li><b>Served as Database Administrator</b> for the Bul Search Engine and Bul Drive Storage projects, keeping the data layer of two cloud products healthy as part of the Cloud Team.</li>
+                <li><b>Engineered a Hadoop-based cloud cluster</b> that strengthened the project's data processing and storage capabilities.</li>
+              </ul>
+            </div>
           </li>
-          <li class="list-inline-item">
-            <i class="devicon-hadoop-plain"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-postgresql-plain"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-mysql-original"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-git-plain"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-tensorflow-plain"></i>
-          </li>
-        </ul>
 
-        <div class="subheading mb-3">Knowledge</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Backend Development
+          <li class="commit reveal">
+            <div class="refs"><span class="tag branch">intern/kobisi</span></div>
+            <div class="commit-title">
+              <h3>Software Engineering Intern <span class="at">@ Kobisi</span></h3>
+              <span class="when">Jun 2020 - Aug 2020</span>
+            </div>
+            <div class="commit-body">
+              <ul class="diff">
+                <li>Built the Node.js backend behind the mobile applications of Kobisi e-commerce projects, integrating robust, scalable e-commerce functionality into mobile platforms.</li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cloud Architecture
+
+          <li class="commit reveal">
+            <div class="refs"><span class="tag branch">intern/carpedu</span></div>
+            <div class="commit-title">
+              <h3>Software Engineering Intern <span class="at">@ Carpedu</span></h3>
+              <span class="when">Sep 2019 - Dec 2019</span>
+            </div>
+            <div class="commit-body">
+              <ul class="diff">
+                <li>Created a Python and Django web platform for psychology studies, integrating puzzles and visuals to support academic research.</li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cloud Computing
+
+          <li class="commit reveal">
+            <div class="refs"><span class="tag branch">intern/tosia-tech</span></div>
+            <div class="commit-title">
+              <h3>Software Engineering Intern <span class="at">@ Tosia Tech</span></h3>
+              <span class="when">Jun 2018 - Aug 2019</span>
+            </div>
+            <div class="commit-body">
+              <ul class="diff">
+                <li>Created a Python and Django travel blog site that strengthened community engagement and content sharing.</li>
+                <li>Developed a secure virtualized payment system using blockchain technology.</li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Database Administration
-          </li>
-        </ul>
+
+        </ol>
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="resume">
-      <div class="my-auto">
-        <div class="resume-section-content d-flex flex-column flex-md-row mb-5">
-          <div class="resume-section-content mr-auto">
-            <h2 class="mb-2"><a href="/MahmutCanKurt-ProfessionalResume.pdf" target="_blank"
-                style="color: orange;">CLICK HERE FOR MY RESUME</a></h2>
+    <section id="skills">
+      <div class="container">
+        <div class="sec-head reveal"><h2>skills</h2><span class="cmt">// stack.ts</span></div>
+        <div class="window reveal">
+          <div class="window-bar"><span class="dot r1"></span><span class="dot y1"></span><span class="dot g1"></span><span class="window-title">stack.ts</span></div>
+<pre class="code"><span class="k">export const</span> stack = {
+  <span class="s">languages</span>: [<span class="f">"JavaScript"</span>, <span class="f">"TypeScript"</span>, <span class="f">"Python"</span>, <span class="f">"SQL"</span>, <span class="f">"Bash"</span>, <span class="f">"HTML"</span>, <span class="f">"CSS"</span>],
+  <span class="s">backend</span>: [<span class="f">"Node.js"</span>, <span class="f">"Express.js"</span>, <span class="f">"NestJS"</span>, <span class="f">"Django"</span>, <span class="f">"Django REST Framework"</span>,
+    <span class="f">"REST API"</span>, <span class="f">"OpenAPI/Swagger"</span>, <span class="f">"Microservices"</span>, <span class="f">"Event-Driven Architecture"</span>,
+    <span class="f">"Workflow Automation"</span>, <span class="f">"Multi-Tenant SaaS"</span>],
+  <span class="s">databases</span>: [<span class="f">"PostgreSQL"</span>, <span class="f">"MySQL"</span>, <span class="f">"NoSQL"</span>, <span class="f">"Firestore"</span>, <span class="f">"Redis"</span>, <span class="f">"Knex.js"</span>,
+    <span class="f">"Database Administration"</span>, <span class="f">"Query Optimization"</span>],
+  <span class="s">cloud</span>: [<span class="f">"Google Cloud Platform"</span>, <span class="f">"App Engine"</span>, <span class="f">"Cloud Run"</span>, <span class="f">"Cloud Tasks"</span>, <span class="f">"Pub/Sub"</span>,
+    <span class="f">"Cloud Storage"</span>, <span class="f">"Cloud SQL"</span>, <span class="f">"Firebase"</span>, <span class="f">"Docker"</span>, <span class="f">"Hadoop"</span>, <span class="f">"Git"</span>,
+    <span class="f">"Bitbucket"</span>, <span class="f">"Jira"</span>],
+  <span class="s">security</span>: [<span class="f">"Authentication and Authorization"</span>, <span class="f">"Role-Based Permissions"</span>, <span class="f">"Data Encryption"</span>,
+    <span class="f">"Antivirus Scanning"</span>, <span class="f">"SQL Injection Prevention"</span>, <span class="f">"Audit Logging"</span>],
+} <span class="k">as const</span>;</pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <div class="sec-head reveal"><h2>education</h2><span class="cmt">// and the things I keep learning</span></div>
+        <div class="two-col">
+          <div class="panel reveal">
+            <h3>Duzce University</h3>
+            <div class="sub">B.Sc. Computer Science · Sep 2016 - Aug 2021</div>
+            <h3 style="margin-top:24px">Languages</h3>
+            <div class="sub">Turkish (Native) · English (IELTS Academic 6.0)</div>
+          </div>
+          <div class="panel reveal">
+            <h3>Certifications and courses</h3>
+            <ul class="kv">
+              <li><b>IDP Education:</b> IELTS Academic, overall score 6.0</li>
+              <li><b>NVIDIA:</b> Getting Started with Deep Learning; Deep Learning for Computer Vision; Image Segmentation with TensorFlow; Medical Image Classification with PyTorch</li>
+              <li><b>AWS:</b> Demystifying AI/ML/DL; Machine Learning Algorithms Explained; Machine Learning Terminology and Process</li>
+              <li><b>Udemy:</b> Web Development with Python and Django; React and Context API</li>
+              <li><b>Carpedu:</b> Python Software Language; Django Web Development; React Native and NodeJS</li>
+            </ul>
           </div>
         </div>
-
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="certifications">
-      <div class="my-auto">
-        <h2 class="mb-5">Certifications &amp; Courses</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            IELTS Academic: Overall Score 6.0 <i>by</i> IDP Education
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Data Augmentation and Segmentation with Generative Networks for Medical Imaging <i>by</i> NVIDIA
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Demystifying AI/ML/DL <i>by</i> AWS
-          </li>
-          <li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Getting Started with Deep Learning <i>by</i> NVIDIA
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Getting Started with Image Segmentation <i>by</i> NVIDIA
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Machine Learning Algorithms Explained <i>by</i> AWS
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Machine Learning Terminology and Process <i>by</i> AWS
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Medical Image Classification Using the MedNIST Dataset - PyTorch <i>by</i> NVIDIA
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Image Classification with Tensorflow: Radiomics 1p19q Chromosome Status Classification <i>by</i> NVIDIA
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Image Segmentation with TensorFlow <i>by</i> NVIDIA
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Deep Learning for Computer Vision <i>by</i> NVIDIA
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Web Development With Python and Django <i>by</i> UDEMY
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            React and Context Api <i>by</i> UDEMY
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Python Software Language <i>by</i> CARPEDU
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Django Web Development <i>by</i> CARPEDU
-          </li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            React Native and NodeJS <i>by</i> CARPEDU
-          </li>
-        </ul>
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="sec-head reveal"><h2>contact</h2><span class="cmt">// let's build something</span></div>
+        <div class="window reveal">
+          <div class="window-bar"><span class="dot r1"></span><span class="dot y1"></span><span class="dot g1"></span><span class="window-title">~/contact</span></div>
+          <ul class="contact-list">
+            <li><span class="prompt">$</span><span class="k">email</span><a href="mailto:is.mahmutcankurt@gmail.com">is.mahmutcankurt@gmail.com</a></li>
+            <li><span class="prompt">$</span><span class="k">linkedin</span><a href="https://www.linkedin.com/in/mahmutcankurt/" target="_blank" rel="noopener">linkedin.com/in/mahmutcankurt</a></li>
+            <li><span class="prompt">$</span><span class="k">github</span><a href="https://github.com/mahmutcankurt" target="_blank" rel="noopener">github.com/mahmutcankurt</a></li>
+            <li><span class="prompt">$</span><span class="k">x</span><a href="https://x.com/grandmasterdevr" target="_blank" rel="noopener">x.com/grandmasterdevr</a></li>
+            <li><span class="prompt">$</span><span class="k">location</span><span>Istanbul, Türkiye</span></li>
+          </ul>
+          <div class="cta">
+            <a class="btn btn-primary" href="MahmutCanKurt-ProfessionalResume.pdf" target="_blank" rel="noopener">./download-resume.sh</a>
+            <a class="btn btn-ghost" href="mailto:is.mahmutcankurt@gmail.com">./send-mail.sh</a>
+          </div>
+        </div>
       </div>
     </section>
 
-  </div>
+  </main>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <footer>
+    <div class="container foot">
+      <span>© <span id="year">2026</span> Mahmut Can Kurt</span>
+      <span>hand-written HTML, CSS and a little JS. no frameworks were harmed.</span>
+    </div>
+  </footer>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>
