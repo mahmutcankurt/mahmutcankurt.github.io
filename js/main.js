@@ -1,27 +1,51 @@
 (function () {
   var root = document.documentElement;
+  var themeBtn = document.getElementById('theme-toggle');
+  var themeMeta = document.querySelector('meta[name="theme-color"]');
+  var systemLight = window.matchMedia('(prefers-color-scheme: light)');
 
-  // dark is the default; a saved choice wins when storage is available
-  try {
-    var saved = localStorage.getItem('theme');
-    if (saved === 'dark' || saved === 'light') root.setAttribute('data-theme', saved);
-  } catch (e) { /* storage blocked */ }
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    themeMeta.setAttribute('content', theme === 'light' ? '#ffffff' : '#0d1117');
+    themeBtn.setAttribute('aria-label', theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+  }
 
-  document.getElementById('theme-toggle').addEventListener('click', function () {
+  function savedTheme() {
+    try { return localStorage.getItem('theme'); } catch (e) { return null; }
+  }
+
+  // the initial theme is set by the inline script in the head; this syncs the button and meta
+  applyTheme(root.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
+
+  themeBtn.addEventListener('click', function () {
     var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-    root.setAttribute('data-theme', next);
+    applyTheme(next);
     try { localStorage.setItem('theme', next); } catch (e) { /* storage blocked */ }
   });
+
+  // follow the system theme until the visitor picks one
+  if (systemLight.addEventListener) {
+    systemLight.addEventListener('change', function (e) {
+      var s = savedTheme();
+      if (s !== 'dark' && s !== 'light') applyTheme(e.matches ? 'light' : 'dark');
+    });
+  }
 
   var menuBtn = document.getElementById('menu-btn');
   var links = document.getElementById('nav-links');
   function setMenu(open) {
     links.classList.toggle('open', open);
     menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
   }
   menuBtn.addEventListener('click', function () { setMenu(!links.classList.contains('open')); });
   links.addEventListener('click', function (e) { if (e.target.tagName === 'A') setMenu(false); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && links.classList.contains('open')) {
+      setMenu(false);
+      menuBtn.focus();
+    }
+  });
 
   document.getElementById('year').textContent = new Date().getFullYear();
 

@@ -1,4 +1,10 @@
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap; src: url('../fonts/inter-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap; src: url('../fonts/inter-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 100 800; font-display: swap; src: url('../fonts/jetbrains-mono-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 100 800; font-display: swap; src: url('../fonts/jetbrains-mono-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
 :root {
+  color-scheme: dark;
   --bg: #0d1117;
   --bg-2: #010409;
   --surface: #161b22;
@@ -20,6 +26,7 @@
 }
 
 :root[data-theme="light"] {
+  color-scheme: light;
   --bg: #ffffff;
   --bg-2: #f6f8fa;
   --surface: #f6f8fa;
@@ -170,6 +177,8 @@ h3 { font-size: 1.05rem; margin: 0; letter-spacing: -.01em; }
 .commit-title { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 2px 16px; }
 .commit-title h3 { font-family: var(--mono); font-size: 1.1rem; }
 .commit-title .at { color: var(--muted); font-weight: 400; }
+.commit-title .at a { color: inherit; text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 3px; }
+.commit-title .at a:hover { color: var(--blue); text-decoration-color: currentColor; }
 .commit-title .when { font-family: var(--mono); font-size: 13px; color: var(--muted); white-space: nowrap; }
 .commit-body { margin-top: 12px; }
 .commit-body > p { color: var(--muted); margin: 0 0 12px; font-size: 15px; }
@@ -208,11 +217,11 @@ footer { padding: 28px 0 44px; border-top: 1px solid var(--border); font-family:
 .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; }
 
 /* reveal */
-.reveal { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
-.reveal.in { opacity: 1; transform: none; }
+.js .reveal { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
+.js .reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
   .caret { animation: none; }
   .btn { transition: none; }
 }
@@ -228,11 +237,13 @@ footer { padding: 28px 0 44px; border-top: 1px solid var(--border); font-family:
   .nav-links.open { display: flex; }
   .nav-links a { padding: 10px 8px; }
   .brand .at-host { display: none; }
+  .id { gap: 12px; }
+  h1 { white-space: normal; overflow-wrap: anywhere; }
   .code { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12.5px; }
 }
 
 @media print {
   .site-header, .skip-link, .cta, .socials { display: none; }
   body { background: #fff; color: #000; }
-  .reveal { opacity: 1; transform: none; }
+  .js .reveal { opacity: 1; transform: none; }
 }
